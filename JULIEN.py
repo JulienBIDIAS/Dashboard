@@ -44,7 +44,8 @@ fig3.update_layout(
      title="Produit par sexe")
 st.plotly_chart(fig3)
 
-fig4 = px.bar(clics, x='gender', y='cookie_id')
+nombre_clic = df['timestemp_x'].count()
+fig4 = px.bar(nombre_clic, x='gender')
 fig4.update_layout(
     xaxis_title='product',
     yaxis_title="price",
