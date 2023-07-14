@@ -5,7 +5,7 @@ import plotly
 import plotly.express as px
 import plotly.graph_objects as go
 
-st.title("APPLICATION DE Jean MOYENGA")
+st.title("APPLICATION DE Julien Parfait BIDIAS")
 st.write("Bienvenue dans mon application streamlit")
 
 # Charger les donnees et les fusionner
