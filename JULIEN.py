@@ -66,15 +66,7 @@ fig5.update_layout(
 )
 st.plotly_chart(fig5)
 
-clics_par_sexe = df['gender'].value_counts()
-df_clics_par_sexe = pd.DataFrame({'gender': clics_par_sexe.index, 'nombre_clics': clics_par_sexe.values})
-fig6 = px.histogram(df_clics_par_sexe, x='gender', y='nombre_clics')
-fig6.update_layout(
-    xaxis_title='Sexe',
-    yaxis_title='Nombre de clics',
-    title='Nombre de clics par sexe'
-)
-st.plotly_chart(fig6)
+
 
 
 
