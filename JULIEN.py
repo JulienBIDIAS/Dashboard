@@ -47,7 +47,7 @@ st.plotly_chart(fig3)
 
 clics_par_cookie = df['cookie_id'].value_counts()
 df_clics_par_cookie = pd.DataFrame({'cookie_id': clics_par_cookie.index, 'nombre_clics': clics_par_cookie.values})
-fig4 = px.histogram(df_clics_par_cookie, x='cookie_id', y='nombre_clics')
+fig4 = px.bar(df_clics_par_cookie, x='cookie_id', y='nombre_clics')
 fig4.update_layout(
     xaxis_title='cookie_id',
     yaxis_title='Nombre de clics',
