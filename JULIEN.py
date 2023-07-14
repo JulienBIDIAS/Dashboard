@@ -46,7 +46,7 @@ st.plotly_chart(fig3)
 
 df['timestamp'] = pd.to_DataFrame(df['timestamp'],unit="s")
 nombre_clic = df['timestamp'].count()
-fig4 = px.bar(y="timestamp", x = 'cookie_id')
+fig4 = px.bar(y=df["timestamp"], x = 'cookie_id')
 fig4.update_layout(
     xaxis_title='product',
     yaxis_title="price",
