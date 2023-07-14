@@ -44,11 +44,11 @@ fig3.update_layout(
      title="Produit par sexe")
 st.plotly_chart(fig3)
 
-fig4 = px.density_contour(df, x='product_id')
+fig4 = px.line(df, x='product_id', y='price')
 fig4.update_layout(
-    xaxis_title='gender',
-    yaxis_title="produits",
-    title="Produit par sexe")
+    xaxis_title='product',
+    yaxis_title="price",
+    title="Produit par prix")
 st.plotly_chart(fig4)
 
 
