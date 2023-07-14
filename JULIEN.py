@@ -44,7 +44,7 @@ fig3.update_layout(
      title="Produit par sexe")
 st.plotly_chart(fig3)
 
-fig4 = px.chart(df, x='price')
+fig4 = px.pie(df, x='gender', y='dept')
 fig4.update_layout(
     xaxis_title='product',
     yaxis_title="price",
