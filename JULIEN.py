@@ -44,7 +44,7 @@ fig3.update_layout(
      title="Produit par sexe")
 st.plotly_chart(fig3)
 
-fig4 = px.Scatter(df, x='gender', y='pice')
+fig4 = px.bar(clics, x='gender', y='cookie_id')
 fig4.update_layout(
     xaxis_title='product',
     yaxis_title="price",
