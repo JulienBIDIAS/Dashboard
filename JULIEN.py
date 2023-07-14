@@ -45,13 +45,15 @@ fig3.update_layout(
 st.plotly_chart(fig3)
 
 
-df['timestamp'] = pd.to_datetime(df['timestamp'], unit="s")
-nombre_clic = df['timestamp'].count()
-fig4 = px.bar(y=df["timestamp"], x = 'cookie_id')
+clics_par_cookie = df['cookie_id'].value_counts()
+df_clics_par_cookie = pd.DataFrame({'cookie_id': clics_par_cookie.index, 'nombre_clics': clics_par_cookie.values})
+fig4 = px.histogram(df_clics_par_cookie, x='cookie_id', y='nombre_clics')
 fig4.update_layout(
-    xaxis_title='product',
-    yaxis_title="price",
-    title="Produit par prix")
+    xaxis_title='cookie_id',
+    yaxis_title='Nombre de clics',
+    title='Nombre de clics par cookie_id'
+)
 st.plotly_chart(fig4)
+
 
 
