@@ -1,4 +1,4 @@
-# Tableaux de Bord 
+# Dashboards
 
 1- Sales monitoring dashboard project based on Python and deployed using Python, in particular FastAPi and Streamlit.
 
